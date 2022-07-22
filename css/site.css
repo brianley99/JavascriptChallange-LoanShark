@@ -1,12 +1,12 @@
 :root {
-    --background-primary: #eff0f3;
-    --background-secondary: #f3d2c1;
+    --background-primary: #9ccad6;
+    --background-secondary: #fcfdfd;
     
-    --stroke: #0d0d0d;
-    --main: #eff0f3;
-    --highlight: #ff8e3c;
-    --secondary: #fffffe;
-    --tertiary: #d9376e;
+    --stroke: #10272d;
+    --main: #3e8390;
+    --highlight: #fcfdfd;
+    --secondary: #9ccad6;
+    --tertiary: #ddeef5;
 
     /*Pallet https://www.happyhues.co/palettes/14*/
 }
@@ -77,8 +77,8 @@ main>.container {
 }
 
 .glass {
-    /* From https://css.glass */
-background: #3c63ff33;
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
