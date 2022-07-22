@@ -1,1 +1,1 @@
-# Javascript Challanges Template
+# Javascript Challange Loan Shark
