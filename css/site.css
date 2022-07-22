@@ -1,0 +1,87 @@
+:root {
+    --background-primary: #eff0f3;
+    --background-secondary: #f3d2c1;
+    
+    --stroke: #0d0d0d;
+    --main: #eff0f3;
+    --highlight: #ff8e3c;
+    --secondary: #fffffe;
+    --tertiary: #d9376e;
+
+    /*Pallet https://www.happyhues.co/palettes/14*/
+}
+
+body {
+    background-color: var(--background-primary);
+}
+
+h1,h2,h3,h4,h5,h6,p,li {
+    color: var(--stroke);
+}
+
+footer {
+    padding-right: 1rem;
+}
+
+.icon {
+    color: white;
+    opacity: .75;
+}
+
+.icon:hover {
+    color: var(--highlight);
+    opacity: .9;
+}
+
+.logo {
+    width: 2rem;
+}
+
+.bsicon {
+    color: #8c13fd;
+}
+
+.jsicon {
+    color: #f7df1e;
+}
+
+.html5icon {
+    color: #f16529;
+}
+
+.css3icon {
+    color: #369cd6;
+}
+
+.checklist>li i {
+    color: var(--highlight);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.glass {
+    /* From https://css.glass */
+background: #3c63ff33;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
