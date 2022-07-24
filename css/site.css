@@ -85,3 +85,11 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.bg-shark-secondary {
+    background-color: #3e82909f;
+}
+
+.bg-shark-primary {
+    background-color: #bedde4;
+}

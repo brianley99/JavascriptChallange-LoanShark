@@ -57,7 +57,67 @@
     <!--Main Section-->
     <main class="flex-shrink-0">
         <div class="container">
-
+            <h2 class="py-2" >Loan Claculator</h2>
+            <div class="row row-cols-1 row-cols-lg-2 gy-4">
+                <div class="col">
+                    <form class="row g-3 bg-shark-primary p-2 rounded">
+                        <div class="col-12">
+                          <label class="form-label">Loan Amount:</label>
+                          <input type="number" class="form-control"  id="loanAmt" placeholder="15000">
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label">Payments:</label>
+                          <input type="number" class="form-control"  id="payments" placeholder="60">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Rate:</label>
+                            <input type="number" class="form-control"  id="rate" placeholder="3">
+                          </div>
+                        
+                        <div class="col-12 d-flex flex-row-reverse">
+                          <button id="btnSubmit" type="submit" class="btn btn-primary">Calculate</button>
+                        </div>
+                      </form>      
+                </div>
+                <div class="col d-flex flex-column">
+                    <h6 class="text-center fst-italic">Your Monthly Payments</h6>
+                    <h1 id="monthlyPayment" class="text-center">
+                        <!--Monthly Payment Goes Here-->
+                    </h1>
+                    <div class="row">
+                        <div class="col">
+                            <p>Total Princibal</p>
+                            <p>Total Interest</p>
+                            <p>Total Cost</p>
+                        </div>
+                        <div id="totalPIC" class="col">
+                            <!--PIC Goes Here-->
+                            <p id="tPrincibal"></p>
+                            <p id="tInterest"></p>
+                            <p id="tCost"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <table class="table bg-shark-secondary table-striped">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Payment</th>
+                                <th>Principal</th>
+                                <th>Interest</th>
+                                <th>Total Interest</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calculatorTable">
+                            <!--Table Results Go Here-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -92,6 +152,9 @@
     <!--JavaScript-->
     <script src="./js/site.js"></script>
 
+    <script>
+        document.getElementById("btnSubmit").addEventListener('click', getValues)
+    </script>
 </body>
 
 </html>
